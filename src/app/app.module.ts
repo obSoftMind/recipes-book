@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { RecipeModule } from './recipe/recipe.module';
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { RecipeModule } from './recipe/recipe.module';
     BrowserModule,
     AppRoutingModule,
     RecipeModule,
+    ShoppingListModule,
     HeaderModule
   ],
   providers: [],
