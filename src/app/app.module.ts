@@ -4,18 +4,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { RecipeModule } from './recipe/recipe.module';
+import { SharedModule } from './shared/shared.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RecipeModule,
     ShoppingListModule,
-    HeaderModule
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

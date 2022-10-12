@@ -6,23 +6,23 @@
         "ingredients": [
             {
                 "name":" poivrons rouges",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":" poivron vert",
-                "quantity":"1"
+                "amount":"1"
             },
             {
                 "name":"tomates",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":" œufs",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":"gousses d'ail",
-                "quantity":"2"
+                "amount":"2"
             }
         ]
     
@@ -34,23 +34,23 @@
          "ingredients": [
             {
                 "name":" poivrons rouges",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":" poivron vert",
-                "quantity":"1"
+                "amount":"1"
             },
             {
                 "name":"tomates",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":" œufs",
-                "quantity":"2"
+                "amount":"2"
             },
             {
                 "name":"gousses d'ail",
-                "quantity":"2"
+                "amount":"2"
             }
         ]
     }
