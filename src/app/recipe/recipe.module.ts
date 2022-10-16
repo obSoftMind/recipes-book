@@ -6,6 +6,9 @@ import { RecipeDetailComponent } from "./recipe-detail/recipe-detail.component";
 import { CommonModule } from "@angular/common";
 import {HttpClientModule} from '@angular/common/http';
 import { SharedModule } from "../shared/shared.module";
+import { RecipeStartComponent } from "./recipe-start/recipe-start.component";
+import { RouterModule } from "@angular/router";
+import { RecipeEditComponent } from "./recipe-edit/recipe-edit.component";
 
 @NgModule({
     declarations:[
@@ -13,16 +16,22 @@ import { SharedModule } from "../shared/shared.module";
         RecipeListComponent, 
         RecipeItemComponent, 
         RecipeDetailComponent,
+        RecipeStartComponent,
+        RecipeEditComponent
        ],
     imports:[
         CommonModule,
         HttpClientModule,
-        SharedModule
+        SharedModule,
+        RouterModule
     ],
     exports:[RecipeComponent, 
         RecipeListComponent, 
         RecipeItemComponent, 
-        RecipeDetailComponent],
+        RecipeDetailComponent,
+        RecipeStartComponent,
+        RecipeEditComponent
+    ],
     providers:[]
 })
 export class RecipeModule {
