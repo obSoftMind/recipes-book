@@ -35,7 +35,7 @@ export class AuthComponent {
         next: resData => {  
           console.log(resData),
           this.isLoading = false;
-          this.router.navigate(['/recipe']);
+          this.router.navigate(['/recipes']);
         },
         error: errorMessage => {
          this.error = errorMessage;
@@ -44,5 +44,9 @@ export class AuthComponent {
       }
     );
     form.reset();
+  }
+
+  onHAndleError(){
+    this.error=null;
   }
 }
