@@ -1,8 +1,14 @@
 <div class="row">
   <div class="col-xs-12 col-md-6 col-md-offset-3">
-    <div class="alert alert-danger" *ngIf="error">
+    <!-- <div class="alert alert-danger" *ngIf="error">
       <p> {{error}}</p>
-     </div>
+     </div> -->
+     <!-- <app-alert [message]="error" *ngIf="error"></app-alert> -->
+  
+    <app-alert *ngIf="error"  (close)="onHAndleError()">
+      <p>{{error}}</p>
+    </app-alert>
+
     <form (ngSubmit)="onAuthSubmit(authForm)" #authForm="ngForm" *ngIf="!isLoading; else loader"> 
       <div class="form-group">
         <label for="email">E-Mail</label>
