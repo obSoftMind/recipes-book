@@ -20,7 +20,7 @@ export class AuthService {
   user = new BehaviorSubject<User>(null);
   tokenExpirationTimer : any
   BASE_URL_SIGNUP = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${environment.firebaseApiKey}`;
-  BASE_URL_SIGNIN = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key${environment.firebaseApiKey}`;
+  BASE_URL_SIGNIN = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.firebaseApiKey}`;
 
   constructor(private httpClient: HttpClient, private router : Router){}
 
